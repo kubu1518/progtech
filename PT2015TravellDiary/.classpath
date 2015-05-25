@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/ojdbc"/>
+	<classpathentry kind="lib" path="C:/Users/Rosti/Downloads/google-maps-services-0.1.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rosti/Downloads/okhttp-2.0.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rosti/Downloads/gson-2.3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rosti/Downloads/httpclient-4.3.5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rosti/Downloads/mockwebserver-20130706.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rosti/Downloads/mockito-core-1.9.5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rosti/Downloads/joda-time-2.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rosti/Downloads/okio-1.4.0.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
