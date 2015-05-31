@@ -74,7 +74,10 @@ public class NewDiary {
 		contentPane.setLayout(null);
 		
 		JLabel lblJourneyName = new JLabel("Journey Name:");
+<<<<<<< HEAD
 		lblJourneyName.setFont(new Font("Tahoma", Font.PLAIN, 11));
+=======
+>>>>>>> 6879f3a50d8323e44357ae604634ad065c80e79f
 		lblJourneyName.setBounds(36, 57, 73, 14);
 		contentPane.add(lblJourneyName);
 		
@@ -84,7 +87,10 @@ public class NewDiary {
 		textFieldJourneyName.setColumns(10);
 		
 		JLabel lblBeginning = new JLabel("Beginning:");
+<<<<<<< HEAD
 		lblBeginning.setFont(new Font("Tahoma", Font.PLAIN, 11));
+=======
+>>>>>>> 6879f3a50d8323e44357ae604634ad065c80e79f
 		lblBeginning.setBounds(59, 94, 50, 14);
 		contentPane.add(lblBeginning);
 		
@@ -101,7 +107,10 @@ public class NewDiary {
 		contentPane.add(comboBoxBYear);
 		
 		JLabel lblEnding = new JLabel("Ending:");
+<<<<<<< HEAD
 		lblEnding.setFont(new Font("Tahoma", Font.PLAIN, 11));
+=======
+>>>>>>> 6879f3a50d8323e44357ae604634ad065c80e79f
 		lblEnding.setBounds(73, 137, 36, 14);
 		contentPane.add(lblEnding);
 		
@@ -118,17 +127,26 @@ public class NewDiary {
 		contentPane.add(comboBoxEYear);
 		
 		JLabel lblTypeOfJ = new JLabel("Type of Journey:");
+<<<<<<< HEAD
 		lblTypeOfJ.setFont(new Font("Tahoma", Font.PLAIN, 11));
+=======
+>>>>>>> 6879f3a50d8323e44357ae604634ad065c80e79f
 		lblTypeOfJ.setBounds(25, 179, 83, 14);
 		contentPane.add(lblTypeOfJ);
 		
 		rdbtnBusiness = new JRadioButton("Business");
+<<<<<<< HEAD
 		rdbtnBusiness.setFont(new Font("Tahoma", Font.PLAIN, 11));
+=======
+>>>>>>> 6879f3a50d8323e44357ae604634ad065c80e79f
 		rdbtnBusiness.setBounds(119, 175, 73, 23);
 		contentPane.add(rdbtnBusiness);
 		
 		rdbtnHoliday = new JRadioButton("Holiday");
+<<<<<<< HEAD
 		rdbtnHoliday.setFont(new Font("Tahoma", Font.PLAIN, 11));
+=======
+>>>>>>> 6879f3a50d8323e44357ae604634ad065c80e79f
 		rdbtnHoliday.setBounds(194, 175, 82, 23);
 		contentPane.add(rdbtnHoliday);
 		

@@ -29,6 +29,10 @@ public abstract class GoogleRequest {
 	}
 	
 	public static long getDistanceBetweenCities(String city1, String city2){
+<<<<<<< HEAD
+=======
+		System.out.println("getdistance");
+>>>>>>> 6879f3a50d8323e44357ae604634ad065c80e79f
 		GeoApiContext context = new GeoApiContext().setApiKey("AIzaSyAX_jIvr80zpJkNgrmdoimePB0BVzn3vRQ");
 		Distance dis = new Distance();
 		DirectionsApiRequest re = DirectionsApi.getDirections(context, city1, city2);

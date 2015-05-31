@@ -42,8 +42,11 @@ import javax.swing.JList;
 import javax.swing.JEditorPane;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+<<<<<<< HEAD
 import javax.swing.border.MatteBorder;
 import javax.swing.JButton;
+=======
+>>>>>>> 6879f3a50d8323e44357ae604634ad065c80e79f
 
 
 public class WorkWindow {
@@ -78,12 +81,15 @@ public class WorkWindow {
 	private JLabel lblJinfDOB;
 	private JLabel lblJinfDOE;
 	private JMenuItem mntmNewDiary;
+<<<<<<< HEAD
 	private JButton btnDelete;
 	private JLabel lblinfAOTD;
 	private JLabel lblJTypeOfJourney;
 	private JLabel lblJinfAOTD;
 	private JMenuItem mntmExit;
 	
+=======
+>>>>>>> 6879f3a50d8323e44357ae604634ad065c80e79f
 	/**
 	 * Launch the application.
 	 */
@@ -117,13 +123,37 @@ public class WorkWindow {
 		
 		mnFile.add(mntmNewDiary);
 		
+<<<<<<< HEAD
 		mntmExit = new JMenuItem("Exit");
+=======
+		JMenuItem mntmExit = new JMenuItem("Exit");
+>>>>>>> 6879f3a50d8323e44357ae604634ad065c80e79f
 		mnFile.add(mntmExit);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		frame.setContentPane(contentPane);
 		contentPane.setLayout(new BorderLayout(0, 0));
 		
+<<<<<<< HEAD
+=======
+		
+		JPanel panelForProfile = new JPanel();
+		panelForProfile.setBorder(new LineBorder(SystemColor.text));
+		contentPane.add(panelForProfile, BorderLayout.NORTH);
+		panelForProfile.setLayout(new BoxLayout(panelForProfile, BoxLayout.X_AXIS));
+		
+		JLabel lblUser = new JLabel("User:");
+		lblUser.setFont(new Font("Segoe UI Symbol", Font.BOLD, 13));
+		lblUser.setHorizontalAlignment(SwingConstants.LEFT);
+		panelForProfile.add(lblUser);
+		
+		Component horizontalStrut = Box.createHorizontalStrut(20);
+		panelForProfile.add(horizontalStrut);
+		
+		JLabel lblUserName = new JLabel("here");
+		panelForProfile.add(lblUserName);
+		
+>>>>>>> 6879f3a50d8323e44357ae604634ad065c80e79f
 		JPanel panelForTree = new JPanel();
 		panelForTree.setBorder(new TitledBorder(new EmptyBorder(0, 0, 0, 0), "Your Diaries", TitledBorder.LEFT, TitledBorder.TOP, null, new Color(59, 59, 59)));
 		contentPane.add(panelForTree, BorderLayout.WEST);
@@ -134,32 +164,51 @@ public class WorkWindow {
 		
 		tree.setVisibleRowCount(2);
 		tree.setBorder(new SoftBevelBorder(BevelBorder.LOWERED, SystemColor.textHighlight, null, null, null));
+<<<<<<< HEAD
 		tree.setFont(new Font("Calibri Light", Font.ITALIC, 14));
 		tree.setForeground(SystemColor.text);
+=======
+		tree.setFont(new Font("Segoe Print", Font.BOLD | Font.ITALIC, 15));
+		tree.setForeground(Color.WHITE);
+>>>>>>> 6879f3a50d8323e44357ae604634ad065c80e79f
 		tree.setBackground(SystemColor.menu);
 		
 		JScrollPane treeView = new JScrollPane(tree);
 		panelForTree.add(treeView, BorderLayout.CENTER);
 		
+<<<<<<< HEAD
 		btnDelete = new JButton("Delete");
 		panelForTree.add(btnDelete, BorderLayout.SOUTH);
 		
 		panelForDatas = new JPanel(new CardLayout(0, 50));
 		panelForDatas.setBorder(new TitledBorder(new LineBorder(new Color(99, 130, 191)), "General Profile Data", TitledBorder.LEADING, TitledBorder.TOP, null, new Color(147, 112, 219)));
+=======
+		panelForDatas = new JPanel(new CardLayout(0, 50));
+		panelForDatas.setBorder(new TitledBorder(null, "General Profile Data", TitledBorder.LEADING, TitledBorder.TOP, null, new Color(138, 43, 226)));
+>>>>>>> 6879f3a50d8323e44357ae604634ad065c80e79f
 		
 		JPanel dataofJRootCard = new JPanel();
 		JPanel dataofJourneyCard = new JPanel();
 		JPanel dataofDayCard = new JPanel();
+<<<<<<< HEAD
 		dataofDayCard.setBackground(SystemColor.activeCaption);
 		dataofDayCard.setForeground(new Color(147, 112, 219));
+=======
+>>>>>>> 6879f3a50d8323e44357ae604634ad065c80e79f
 		
 		panelForDatas.add(dataofJRootCard,"r");
 		dataofJRootCard.setLayout(new GridLayout(0, 2, 0, 10));
 		
 		JLabel lblFullName = new JLabel("Owner");
+<<<<<<< HEAD
 		lblFullName.setForeground(SystemColor.inactiveCaptionBorder);
 		lblFullName.setOpaque(true);
 		lblFullName.setBackground(SystemColor.activeCaption);
+=======
+		lblFullName.setForeground(new Color(186, 85, 211));
+		lblFullName.setOpaque(true);
+		lblFullName.setBackground(new Color(230, 230, 250));
+>>>>>>> 6879f3a50d8323e44357ae604634ad065c80e79f
 		lblFullName.setHorizontalAlignment(SwingConstants.RIGHT);
 		lblFullName.setFont(new Font("Plantagenet Cherokee", Font.BOLD, 18));
 		dataofJRootCard.add(lblFullName);
@@ -170,10 +219,17 @@ public class WorkWindow {
 		lblinfFN.setHorizontalAlignment(SwingConstants.CENTER);
 		dataofJRootCard.add(lblinfFN);
 		
+<<<<<<< HEAD
 		JLabel lbldateOfCreating = new JLabel("Date of profile create");
 		lbldateOfCreating.setForeground(SystemColor.inactiveCaptionBorder);
 		lbldateOfCreating.setOpaque(true);
 		lbldateOfCreating.setBackground(SystemColor.activeCaption);
+=======
+		JLabel lbldateOfCreating = new JLabel("Time of creating Profile");
+		lbldateOfCreating.setForeground(new Color(186, 85, 211));
+		lbldateOfCreating.setOpaque(true);
+		lbldateOfCreating.setBackground(new Color(230, 230, 250));
+>>>>>>> 6879f3a50d8323e44357ae604634ad065c80e79f
 		lbldateOfCreating.setHorizontalAlignment(SwingConstants.RIGHT);
 		lbldateOfCreating.setFont(new Font("Plantagenet Cherokee", Font.BOLD, 18));
 		dataofJRootCard.add(lbldateOfCreating);
@@ -185,9 +241,15 @@ public class WorkWindow {
 		dataofJRootCard.add(lblinfTOCP);
 		
 		JLabel lblNumOfDiaries = new JLabel("Number of diaries");
+<<<<<<< HEAD
 		lblNumOfDiaries.setForeground(SystemColor.inactiveCaptionBorder);
 		lblNumOfDiaries.setOpaque(true);
 		lblNumOfDiaries.setBackground(SystemColor.activeCaption);
+=======
+		lblNumOfDiaries.setForeground(new Color(186, 85, 211));
+		lblNumOfDiaries.setOpaque(true);
+		lblNumOfDiaries.setBackground(new Color(230, 230, 250));
+>>>>>>> 6879f3a50d8323e44357ae604634ad065c80e79f
 		lblNumOfDiaries.setHorizontalAlignment(SwingConstants.RIGHT);
 		lblNumOfDiaries.setFont(new Font("Plantagenet Cherokee", Font.BOLD, 18));
 		dataofJRootCard.add(lblNumOfDiaries);
@@ -199,9 +261,15 @@ public class WorkWindow {
 		dataofJRootCard.add(lblinfNOD);
 		
 		JLabel lblAllCosts = new JLabel("All costs");
+<<<<<<< HEAD
 		lblAllCosts.setForeground(SystemColor.inactiveCaptionBorder);
 		lblAllCosts.setOpaque(true);
 		lblAllCosts.setBackground(SystemColor.activeCaption);
+=======
+		lblAllCosts.setForeground(new Color(186, 85, 211));
+		lblAllCosts.setOpaque(true);
+		lblAllCosts.setBackground(new Color(230, 230, 250));
+>>>>>>> 6879f3a50d8323e44357ae604634ad065c80e79f
 		lblAllCosts.setHorizontalAlignment(SwingConstants.RIGHT);
 		lblAllCosts.setFont(new Font("Plantagenet Cherokee", Font.BOLD, 18));
 		dataofJRootCard.add(lblAllCosts);
@@ -213,9 +281,15 @@ public class WorkWindow {
 		dataofJRootCard.add(lblinfAC);
 		
 		JLabel lblAllTraveledDistance = new JLabel("All traveled distance");
+<<<<<<< HEAD
 		lblAllTraveledDistance.setForeground(SystemColor.inactiveCaptionBorder);
 		lblAllTraveledDistance.setOpaque(true);
 		lblAllTraveledDistance.setBackground(SystemColor.activeCaption);
+=======
+		lblAllTraveledDistance.setForeground(new Color(186, 85, 211));
+		lblAllTraveledDistance.setOpaque(true);
+		lblAllTraveledDistance.setBackground(new Color(230, 230, 250));
+>>>>>>> 6879f3a50d8323e44357ae604634ad065c80e79f
 		lblAllTraveledDistance.setHorizontalAlignment(SwingConstants.RIGHT);
 		lblAllTraveledDistance.setFont(new Font("Plantagenet Cherokee", Font.BOLD, 18));
 		dataofJRootCard.add(lblAllTraveledDistance);
@@ -226,6 +300,7 @@ public class WorkWindow {
 		lblinfATD.setHorizontalAlignment(SwingConstants.CENTER);
 		dataofJRootCard.add(lblinfATD);
 		
+<<<<<<< HEAD
 		JLabel lblAvarage = new JLabel("Average of traveled distance");
 		lblAvarage.setOpaque(true);
 		lblAvarage.setHorizontalAlignment(SwingConstants.RIGHT);
@@ -244,6 +319,12 @@ public class WorkWindow {
 		lblAllSpentDays.setForeground(SystemColor.inactiveCaptionBorder);
 		lblAllSpentDays.setOpaque(true);
 		lblAllSpentDays.setBackground(SystemColor.activeCaption);
+=======
+		JLabel lblAllSpentDays = new JLabel("All spent days");
+		lblAllSpentDays.setForeground(new Color(186, 85, 211));
+		lblAllSpentDays.setOpaque(true);
+		lblAllSpentDays.setBackground(new Color(230, 230, 250));
+>>>>>>> 6879f3a50d8323e44357ae604634ad065c80e79f
 		lblAllSpentDays.setHorizontalAlignment(SwingConstants.RIGHT);
 		lblAllSpentDays.setFont(new Font("Plantagenet Cherokee", Font.BOLD, 18));
 		dataofJRootCard.add(lblAllSpentDays);
@@ -258,13 +339,21 @@ public class WorkWindow {
 		dataofJourneyCard.setLayout(new BoxLayout(dataofJourneyCard, BoxLayout.Y_AXIS));
 		
 		JPanel dataofJourneypanel1 = new JPanel();
+<<<<<<< HEAD
 		dataofJourneypanel1.setBorder(new TitledBorder(new LineBorder(new Color(184, 207, 229)), "General", TitledBorder.LEADING, TitledBorder.TOP, null, new Color(147, 112, 219)));
+=======
+		dataofJourneypanel1.setBorder(new TitledBorder(null, "General", TitledBorder.LEADING, TitledBorder.TOP, null, null));
+>>>>>>> 6879f3a50d8323e44357ae604634ad065c80e79f
 		dataofJourneyCard.add(dataofJourneypanel1);
 		dataofJourneypanel1.setLayout(new GridLayout(0, 2, 0, 0));
 		
 		JLabel lblJJourneyName = new JLabel("Journey Name");
+<<<<<<< HEAD
 		lblJJourneyName.setForeground(new Color(106, 90, 205));
 		lblJJourneyName.setFont(new Font("Microsoft JhengHei", Font.PLAIN, 12));
+=======
+		lblJJourneyName.setFont(new Font("Comic Sans MS", Font.BOLD, 12));
+>>>>>>> 6879f3a50d8323e44357ae604634ad065c80e79f
 		lblJJourneyName.setHorizontalAlignment(SwingConstants.RIGHT);
 		dataofJourneypanel1.add(lblJJourneyName);
 		
@@ -273,8 +362,12 @@ public class WorkWindow {
 		dataofJourneypanel1.add(lblJinfJN);
 		
 		JLabel lblJDateOfCreating = new JLabel("Date of creating");
+<<<<<<< HEAD
 		lblJDateOfCreating.setForeground(new Color(106, 90, 205));
 		lblJDateOfCreating.setFont(new Font("Microsoft JhengHei", Font.PLAIN, 12));
+=======
+		lblJDateOfCreating.setFont(new Font("Comic Sans MS", Font.BOLD, 12));
+>>>>>>> 6879f3a50d8323e44357ae604634ad065c80e79f
 		lblJDateOfCreating.setHorizontalAlignment(SwingConstants.RIGHT);
 		dataofJourneypanel1.add(lblJDateOfCreating);
 		
@@ -283,9 +376,14 @@ public class WorkWindow {
 		dataofJourneypanel1.add(lblJinfDOC);
 		
 		JLabel lblJDateOfBeginning = new JLabel("Beginning");
+<<<<<<< HEAD
 		lblJDateOfBeginning.setForeground(new Color(106, 90, 205));
 		lblJDateOfBeginning.setHorizontalAlignment(SwingConstants.RIGHT);
 		lblJDateOfBeginning.setFont(new Font("Microsoft JhengHei", Font.PLAIN, 12));
+=======
+		lblJDateOfBeginning.setHorizontalAlignment(SwingConstants.RIGHT);
+		lblJDateOfBeginning.setFont(new Font("Comic Sans MS", Font.BOLD, 12));
+>>>>>>> 6879f3a50d8323e44357ae604634ad065c80e79f
 		dataofJourneypanel1.add(lblJDateOfBeginning);
 		
 		lblJinfDOB = new JLabel("");
@@ -293,9 +391,14 @@ public class WorkWindow {
 		dataofJourneypanel1.add(lblJinfDOB);
 		
 		JLabel lblJDateOfEnding = new JLabel("End");
+<<<<<<< HEAD
 		lblJDateOfEnding.setForeground(new Color(106, 90, 205));
 		lblJDateOfEnding.setHorizontalAlignment(SwingConstants.RIGHT);
 		lblJDateOfEnding.setFont(new Font("Microsoft JhengHei", Font.PLAIN, 12));
+=======
+		lblJDateOfEnding.setHorizontalAlignment(SwingConstants.RIGHT);
+		lblJDateOfEnding.setFont(new Font("Comic Sans MS", Font.BOLD, 12));
+>>>>>>> 6879f3a50d8323e44357ae604634ad065c80e79f
 		dataofJourneypanel1.add(lblJDateOfEnding);
 		
 		lblJinfDOE = new JLabel("");
@@ -303,8 +406,12 @@ public class WorkWindow {
 		dataofJourneypanel1.add(lblJinfDOE);
 		
 		JLabel lblJNumberOfDays = new JLabel("Number of Days");
+<<<<<<< HEAD
 		lblJNumberOfDays.setForeground(new Color(106, 90, 205));
 		lblJNumberOfDays.setFont(new Font("Microsoft JhengHei", Font.PLAIN, 12));
+=======
+		lblJNumberOfDays.setFont(new Font("Comic Sans MS", Font.BOLD, 12));
+>>>>>>> 6879f3a50d8323e44357ae604634ad065c80e79f
 		lblJNumberOfDays.setHorizontalAlignment(SwingConstants.RIGHT);
 		dataofJourneypanel1.add(lblJNumberOfDays);
 		
@@ -313,8 +420,12 @@ public class WorkWindow {
 		dataofJourneypanel1.add(lblJinfNOD);
 		
 		JLabel lblJAllCosts = new JLabel("All costs");
+<<<<<<< HEAD
 		lblJAllCosts.setForeground(new Color(106, 90, 205));
 		lblJAllCosts.setFont(new Font("Microsoft JhengHei", Font.PLAIN, 12));
+=======
+		lblJAllCosts.setFont(new Font("Comic Sans MS", Font.BOLD, 12));
+>>>>>>> 6879f3a50d8323e44357ae604634ad065c80e79f
 		lblJAllCosts.setHorizontalAlignment(SwingConstants.RIGHT);
 		dataofJourneypanel1.add(lblJAllCosts);
 		
@@ -323,8 +434,12 @@ public class WorkWindow {
 		dataofJourneypanel1.add(lblJinfAC);
 		
 		JLabel lblJAllTraveledDistance = new JLabel("All traveled distance");
+<<<<<<< HEAD
 		lblJAllTraveledDistance.setForeground(new Color(106, 90, 205));
 		lblJAllTraveledDistance.setFont(new Font("Microsoft JhengHei", Font.PLAIN, 12));
+=======
+		lblJAllTraveledDistance.setFont(new Font("Comic Sans MS", Font.BOLD, 12));
+>>>>>>> 6879f3a50d8323e44357ae604634ad065c80e79f
 		lblJAllTraveledDistance.setHorizontalAlignment(SwingConstants.RIGHT);
 		dataofJourneypanel1.add(lblJAllTraveledDistance);
 		
@@ -332,6 +447,7 @@ public class WorkWindow {
 		lblJinfATD.setHorizontalAlignment(SwingConstants.CENTER);
 		dataofJourneypanel1.add(lblJinfATD);
 		
+<<<<<<< HEAD
 		JLabel lblAverageOfTraveled = new JLabel("Average of traveled distance");
 		lblAverageOfTraveled.setHorizontalAlignment(SwingConstants.RIGHT);
 		lblAverageOfTraveled.setForeground(new Color(106, 90, 205));
@@ -345,6 +461,10 @@ public class WorkWindow {
 		lblJTypeOfJourney = new JLabel("Type of Journey");
 		lblJTypeOfJourney.setForeground(new Color(106, 90, 205));
 		lblJTypeOfJourney.setFont(new Font("Microsoft JhengHei", Font.PLAIN, 12));
+=======
+		JLabel lblJTypeOfJourney = new JLabel("Type of Journey");
+		lblJTypeOfJourney.setFont(new Font("Comic Sans MS", Font.BOLD, 12));
+>>>>>>> 6879f3a50d8323e44357ae604634ad065c80e79f
 		lblJTypeOfJourney.setHorizontalAlignment(SwingConstants.RIGHT);
 		dataofJourneypanel1.add(lblJTypeOfJourney);
 		
@@ -353,7 +473,11 @@ public class WorkWindow {
 		dataofJourneypanel1.add(lblJinfTOJ);
 		
 		JPanel dataofJourneypanel2 = new JPanel();
+<<<<<<< HEAD
 		dataofJourneypanel2.setBorder(new TitledBorder(new LineBorder(new Color(184, 207, 229)), "Locations", TitledBorder.LEFT, TitledBorder.TOP, null, new Color(147, 112, 219)));
+=======
+		dataofJourneypanel2.setBorder(new TitledBorder(null, "Locations", TitledBorder.LEFT, TitledBorder.TOP, null, new Color(59, 59, 59)));
+>>>>>>> 6879f3a50d8323e44357ae604634ad065c80e79f
 		dataofJourneyCard.add(dataofJourneypanel2);
 		dataofJourneypanel2.setLayout(new BorderLayout(0, 0));
 		
@@ -365,6 +489,7 @@ public class WorkWindow {
 		dataofDayCard.setLayout(new BoxLayout(dataofDayCard, BoxLayout.Y_AXIS));
 		
 		JPanel dataOfDaypanel1 = new JPanel();
+<<<<<<< HEAD
 		dataOfDaypanel1.setBorder(new TitledBorder(new LineBorder(new Color(184, 207, 229)), "General", TitledBorder.LEADING, TitledBorder.TOP, null, new Color(147, 112, 219)));
 		dataofDayCard.add(dataOfDaypanel1);
 		dataOfDaypanel1.setLayout(new GridLayout(0, 2, 0, 10));
@@ -373,6 +498,13 @@ public class WorkWindow {
 		lblDDateOfDay.setOpaque(true);
 		lblDDateOfDay.setBackground(SystemColor.activeCaption);
 		lblDDateOfDay.setForeground(SystemColor.window);
+=======
+		dataOfDaypanel1.setBorder(new TitledBorder(null, "General", TitledBorder.LEADING, TitledBorder.TOP, null, null));
+		dataofDayCard.add(dataOfDaypanel1);
+		dataOfDaypanel1.setLayout(new GridLayout(0, 2, 0, 0));
+		
+		JLabel lblDDateOfDay = new JLabel("Date");
+>>>>>>> 6879f3a50d8323e44357ae604634ad065c80e79f
 		lblDDateOfDay.setFont(new Font("Segoe UI", Font.BOLD, 12));
 		lblDDateOfDay.setHorizontalAlignment(SwingConstants.RIGHT);
 		dataOfDaypanel1.add(lblDDateOfDay);
@@ -382,9 +514,12 @@ public class WorkWindow {
 		dataOfDaypanel1.add(lblDinfDOD);
 		
 		JLabel lblDTraveledDistOfDay = new JLabel("Traveled distance");
+<<<<<<< HEAD
 		lblDTraveledDistOfDay.setOpaque(true);
 		lblDTraveledDistOfDay.setBackground(SystemColor.activeCaption);
 		lblDTraveledDistOfDay.setForeground(SystemColor.window);
+=======
+>>>>>>> 6879f3a50d8323e44357ae604634ad065c80e79f
 		lblDTraveledDistOfDay.setFont(new Font("Segoe UI", Font.BOLD, 12));
 		lblDTraveledDistOfDay.setHorizontalAlignment(SwingConstants.RIGHT);
 		dataOfDaypanel1.add(lblDTraveledDistOfDay);
@@ -394,9 +529,12 @@ public class WorkWindow {
 		dataOfDaypanel1.add(lblDinfoTD);
 		
 		JLabel lblDCostOfDay = new JLabel("Costs");
+<<<<<<< HEAD
 		lblDCostOfDay.setOpaque(true);
 		lblDCostOfDay.setBackground(SystemColor.activeCaption);
 		lblDCostOfDay.setForeground(SystemColor.window);
+=======
+>>>>>>> 6879f3a50d8323e44357ae604634ad065c80e79f
 		lblDCostOfDay.setFont(new Font("Segoe UI", Font.BOLD, 12));
 		lblDCostOfDay.setHorizontalAlignment(SwingConstants.RIGHT);
 		dataOfDaypanel1.add(lblDCostOfDay);
@@ -406,7 +544,11 @@ public class WorkWindow {
 		dataOfDaypanel1.add(lblDinfC);
 		
 		JPanel dataOfDaypanel2 = new JPanel();
+<<<<<<< HEAD
 		dataOfDaypanel2.setBorder(new TitledBorder(new LineBorder(new Color(184, 207, 229)), "Note of the Day", TitledBorder.LEADING, TitledBorder.TOP, null, new Color(147, 112, 219)));
+=======
+		dataOfDaypanel2.setBorder(new TitledBorder(null, "Note of the Day", TitledBorder.LEADING, TitledBorder.TOP, null, null));
+>>>>>>> 6879f3a50d8323e44357ae604634ad065c80e79f
 		dataofDayCard.add(dataOfDaypanel2);
 		dataOfDaypanel2.setLayout(new BorderLayout(0, 0));
 		
@@ -415,7 +557,11 @@ public class WorkWindow {
 		dataOfDaypanel2.add(dtrpnNote, BorderLayout.CENTER);
 		
 		JPanel dataOfDaypanel3 = new JPanel();
+<<<<<<< HEAD
 		dataOfDaypanel3.setBorder(new TitledBorder(new LineBorder(new Color(184, 207, 229)), "Locations", TitledBorder.LEADING, TitledBorder.TOP, null, new Color(147, 112, 219)));
+=======
+		dataOfDaypanel3.setBorder(new TitledBorder(null, "Locations", TitledBorder.LEADING, TitledBorder.TOP, null, null));
+>>>>>>> 6879f3a50d8323e44357ae604634ad065c80e79f
 		dataofDayCard.add(dataOfDaypanel3);
 		dataOfDaypanel3.setLayout(new BorderLayout(0, 0));
 		
@@ -438,21 +584,27 @@ public class WorkWindow {
 	public void addMenuItemNewDiaryListener(ActionListener listenerForItem){
 		mntmNewDiary.addActionListener(listenerForItem);
 	}
+<<<<<<< HEAD
 	
 	 public void addMenuItemExitListener(ActionListener listenerForItem){
 		 mntmExit.addActionListener(listenerForItem);
 	 }
+=======
+>>>>>>> 6879f3a50d8323e44357ae604634ad065c80e79f
 
     public void addTreeListener(TreeSelectionListener forSelectedItem){
     	tree.getSelectionModel().addTreeSelectionListener(forSelectedItem);
     }
     
+<<<<<<< HEAD
     public void addDeleteButtonListener(ActionListener listenerforDelete){
     	btnDelete.addActionListener(listenerforDelete);
     }
     
    
     
+=======
+>>>>>>> 6879f3a50d8323e44357ae604634ad065c80e79f
    
 
 	public JPanel getPanelForDatas() {
@@ -480,10 +632,13 @@ public class WorkWindow {
 	public void setLblinfATD(String result) {
 		this.lblinfATD.setText(result);
 	}
+<<<<<<< HEAD
 	
 	public void setLblinfAOTD(String result) {
 		this.lblinfAOTD.setText(result);
 	}
+=======
+>>>>>>> 6879f3a50d8323e44357ae604634ad065c80e79f
 
 	public void setLblinfASD(String result) {
 		this.lblinfASD.setText(result);
@@ -511,10 +666,13 @@ public class WorkWindow {
 	public void setLblJinfATD(String result) {
 		this.lblJinfATD.setText(result);
 	}
+<<<<<<< HEAD
 	
 	public void setLblJinfAOTD(String result) {
 		this.lblJinfAOTD.setText(result);
 	}
+=======
+>>>>>>> 6879f3a50d8323e44357ae604634ad065c80e79f
 
 	public void setLblJinfTOJ(String result) {
 		this.lblJinfTOJ.setText(result);
@@ -543,7 +701,10 @@ public class WorkWindow {
 		this.lblDinfC.setText(result);
 	}
 	
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6879f3a50d8323e44357ae604634ad065c80e79f
 	
 
 	public JList getListJLocations() {
@@ -558,6 +719,7 @@ public class WorkWindow {
 		return dtrpnNote;
 	}
 
+<<<<<<< HEAD
     public JButton getDeleteButton(){
 	   return btnDelete;
     }
@@ -565,6 +727,9 @@ public class WorkWindow {
 	public void setTree(JTree tree) {
 		this.tree = tree;
 	}
+=======
+    
+>>>>>>> 6879f3a50d8323e44357ae604634ad065c80e79f
 	
     
 	

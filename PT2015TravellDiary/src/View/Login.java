@@ -21,9 +21,14 @@ import java.awt.event.ActionListener;
 import javax.swing.border.MatteBorder;
 import javax.swing.JPasswordField;
 
+<<<<<<< HEAD
 public class Login {
 
 	private JFrame frame;
+=======
+public class Login extends JFrame {
+
+>>>>>>> 6879f3a50d8323e44357ae604634ad065c80e79f
 	private JPanel contentPane;
 	private JTextField usernameTf;
 	private JPasswordField passwPf;
@@ -34,11 +39,20 @@ public class Login {
 	/**
 	 * Launch the application.
 	 */
+<<<<<<< HEAD
 	public void showLogin() {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
 					Login.this.frame.setVisible(true);
+=======
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					Login frame = new Login();
+					frame.setVisible(true);
+>>>>>>> 6879f3a50d8323e44357ae604634ad065c80e79f
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -50,6 +64,7 @@ public class Login {
 	 * Create the frame.
 	 */
 	public Login() {
+<<<<<<< HEAD
 		frame = new JFrame();
 		frame.setForeground(Color.WHITE);
 		frame.setResizable(false);
@@ -61,6 +76,18 @@ public class Login {
 		contentPane.setBackground(SystemColor.menu);
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		frame.setContentPane(contentPane);
+=======
+		setForeground(Color.WHITE);
+		setResizable(false);
+		setTitle("Travel Diary");
+		setBackground(new Color(255, 255, 255));
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 294, 262);
+		contentPane = new JPanel();
+		contentPane.setBackground(SystemColor.menu);
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+>>>>>>> 6879f3a50d8323e44357ae604634ad065c80e79f
 		contentPane.setLayout(null);
 
 		usernameTf = new JTextField();
@@ -124,10 +151,13 @@ public class Login {
 	}
 	
 	
+<<<<<<< HEAD
 	public JFrame getFrame() {
 		return frame;
 	}
 
+=======
+>>>>>>> 6879f3a50d8323e44357ae604634ad065c80e79f
 	public String getUsername(){
 		return this.usernameTf.getText();
 	}

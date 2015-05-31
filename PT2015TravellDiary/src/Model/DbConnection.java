@@ -191,7 +191,24 @@ public abstract class DbConnection {
 			String pass) {
 		buildConnection();
 		ResultSet rs = null;
+<<<<<<< HEAD
 		int newid = generateNextId("U_profile", "profile_id");	
+=======
+		int n;
+		while (true) {
+			n = getRanId();
+			try (PreparedStatement pst = con
+					.prepareStatement("select profile_id from u_profile where profile_id = ?")) {
+				pst.setInt(1, n);
+				rs = pst.executeQuery();
+				if (!rs.next())
+					break;
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
+
+>>>>>>> 6879f3a50d8323e44357ae604634ad065c80e79f
 		try (PreparedStatement pst = con
 				.prepareStatement("select username from u_profile where username = ?")) {
 			pst.setString(1, username);
@@ -205,7 +222,11 @@ public abstract class DbConnection {
 
 		try (PreparedStatement pst = con
 				.prepareStatement("insert into U_PROFILE (PROFILE_ID,FULL_NAME, USERNAME,PASSW) VALUES(?,?,?,?)")) {
+<<<<<<< HEAD
 			pst.setInt(1, newid);
+=======
+			pst.setInt(1, n);
+>>>>>>> 6879f3a50d8323e44357ae604634ad065c80e79f
 			pst.setString(2, fullname);
 			pst.setString(3, username);
 			pst.setString(4, pass);
@@ -213,6 +234,7 @@ public abstract class DbConnection {
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
+<<<<<<< HEAD
 		closeConnection();
 		return true;
 	}
@@ -361,6 +383,15 @@ public abstract class DbConnection {
 			e.printStackTrace();
 		}
 		
+=======
+
+		return true;
+	}
+
+	public static int getRanId() {
+		Random n = new Random();
+		return 1000 + n.nextInt(8999);
+>>>>>>> 6879f3a50d8323e44357ae604634ad065c80e79f
 	}
 
 }

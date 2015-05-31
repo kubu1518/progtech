@@ -39,7 +39,12 @@ public class Location {
 
 	@Override
 	public String toString() {
+<<<<<<< HEAD
 		return LocName;
+=======
+		return "Location [LocId=" + LocId + ", LocName=" + LocName
+				+ ", longitude=" + longitude + ", latitude=" + latitude + "]";
+>>>>>>> 6879f3a50d8323e44357ae604634ad065c80e79f
 	}
     
     

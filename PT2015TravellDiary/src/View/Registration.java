@@ -21,9 +21,14 @@ import javax.swing.JTextField;
 import javax.swing.JButton;
 import javax.swing.JPasswordField;
 
+<<<<<<< HEAD
 public class Registration {
 
 	private JFrame frame;
+=======
+public class Registration extends JFrame {
+
+>>>>>>> 6879f3a50d8323e44357ae604634ad065c80e79f
 	private JPanel contentPane;
 	private JTextField textFieldFullName;
 	private JTextField textFieldUserName;
@@ -36,11 +41,20 @@ public class Registration {
 	/**
 	 * Launch the application.
 	 */
+<<<<<<< HEAD
 	public void showRegistration() {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
 					Registration.this.frame.setVisible(true);
+=======
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					Registration frame = new Registration();
+					frame.setVisible(true);
+>>>>>>> 6879f3a50d8323e44357ae604634ad065c80e79f
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -52,6 +66,7 @@ public class Registration {
 	 * Create the frame.
 	 */
 	public Registration() {
+<<<<<<< HEAD
 		frame = new JFrame();
 		frame.setTitle("Registration");
 		frame.setResizable(false);
@@ -61,6 +76,16 @@ public class Registration {
 		contentPane.setFont(new Font("Tahoma", Font.PLAIN, 11));
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		frame.setContentPane(contentPane);
+=======
+		setTitle("Registration");
+		setResizable(false);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 450, 271);
+		contentPane = new JPanel();
+		contentPane.setFont(new Font("Tahoma", Font.PLAIN, 11));
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+>>>>>>> 6879f3a50d8323e44357ae604634ad065c80e79f
 		contentPane.setLayout(null);
 		
 		JLabel lblTitle = new JLabel("Travel Diary");
@@ -142,12 +167,15 @@ public class Registration {
 		contentPane.add(lblValidInfo);
 	}
 	
+<<<<<<< HEAD
 	
 	
 	public JFrame getFrame() {
 		return frame;
 	}
 
+=======
+>>>>>>> 6879f3a50d8323e44357ae604634ad065c80e79f
 	public String getFullName(){
 		return this.textFieldFullName.getText();
 	}
